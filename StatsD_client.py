@@ -3,7 +3,7 @@ import time
 import random
 #if __name__ == "__main__":
 options = {
-    'statsd_host':'127.0.0.1',
+    'statsd_host':'192.168.1.153',
     'statsd_port':8125
 }
 
