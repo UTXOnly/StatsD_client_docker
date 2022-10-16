@@ -1,0 +1,31 @@
+version: "2.1"
+services:
+  statsd:
+    #image: StatsD:test1
+    build: ./ 
+    container_name: StatsD_client
+    restart: unless-stopped
+    networks:
+      - test-docker-net
+
+    datadog:
+      container_name: datadog-agent
+      image: datadog/agent:latest
+      environment:
+      ## GLOBALS
+        - DD_API_KEY
+        - DD_SITE=datadoghq.com
+        - DD_HOSTNAME=docker.sandbox
+        - DD_TAGS=reason:statsd_test tag_test:yes
+        - DD_DOCKER_LABELS_AS_TAGS=true
+        - DD_DOCKER_ENV_AS_TAGS=true
+      volumes:
+        - /var/run/docker.sock:/var/run/docker.sock:ro
+        - /proc/:/host/proc/:ro
+        - /sys/fs/cgroup:/host/sys/fs/cgroup:ro
+      networks:
+        - my-net # Created with docker network create my-net and deleted with docker network rm my-net
+
+networks:
+  test-docker-net:
+    external: true
