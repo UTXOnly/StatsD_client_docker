@@ -6,4 +6,4 @@ To run this script, simply enter the below command in your terminal and press en
 
 ```./run.sh```
 
-<img src="https://a.cl.ly/8Lu16lq6" alt="Alt text" title="Optional title">
+
