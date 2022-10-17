@@ -1,6 +1,7 @@
 # StatsD_client_docker
 
-### Usage###
+## Usage
 
-To run \n
+To run 
+
 ```./run.sh```
