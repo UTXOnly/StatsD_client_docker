@@ -12,8 +12,8 @@ If you don't already have a `.env` file, you can create one by running the comma
 You can then add the necessary environment variables as depicted below:
 
 
- ````DD_API_KEY= <YOUR_API_KEY_HERE> <br/>
-     DD_AGENT_HOST=host.docker.internal````
+ `DD_API_KEY= <YOUR_API_KEY_HERE>`
+ `DD_AGENT_HOST=host.docker.internal`
 
 To run this script, simply enter the below command in your terminal and press enter.
 
