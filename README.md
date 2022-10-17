@@ -20,3 +20,4 @@ To run this script, simply run the follwing script from this repositorie's paren
 `./run.sh`
 
 The run script simply builds fresh Docker images each instance, leveraging the `docker-compose` command
+![Datadog Metric Query](https://user-images.githubusercontent.com/49233513/196078074-39e4ae8d-7c42-4cc9-99cf-217a0fcca508.jpg)
