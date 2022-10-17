@@ -3,7 +3,6 @@ services:
   statsd_client:
     build: ./ 
     container_name: StatsD_client
-    restart: unless-stopped
     
   datadog:
     container_name: datadog-agent
