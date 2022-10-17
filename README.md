@@ -3,7 +3,7 @@
 Build a sandbox test environment to test StatsD client instansiation as well as Datadog Docker agent configuration. StatsD client is submitting custom metrics via `python` script sent to `host.docker.internal:8125/udp`
 
 ## Requirements
-This script requires a `.env` file to be placed in the repositorie's parent directory (./). Your `.env` file should contain environmental variables needs for your docker containers, in this case your `DD_API_KEY` and `DD_AGENT_HOST`
+This script requires a `.env` file to be placed in the repository's parent directory (./). Your `.env` file should contain environmental variables needs for your docker containers, in this case your `DD_API_KEY` and `DD_AGENT_HOST`
 
 If you don't already have a `.env` file, you can create one by running the command below in this repositorie's parent directory (./):
 
@@ -15,7 +15,7 @@ You can then add the necessary environment variables as depicted below:
  `DD_API_KEY= <YOUR_API_KEY_HERE>` \
  `DD_AGENT_HOST=host.docker.internal`
 
-To run this script, simply run the follwing script from this repositorie's parent directory.
+To run this script, simply run the follwing script from this repository's parent directory.
 
 `./run.sh`
 
