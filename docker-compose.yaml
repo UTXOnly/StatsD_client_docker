@@ -1,7 +1,6 @@
 version: "2.1"
 services:
-  statsd:
-    #image: StatsD:test1
+  statsd_client:
     build: ./ 
     container_name: StatsD_client
     restart: unless-stopped
