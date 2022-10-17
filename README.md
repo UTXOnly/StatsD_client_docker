@@ -5,7 +5,7 @@ Build a sandbox test environment to test StatsD client instansiation as well as 
 ## Requirements
 This script requires a `.env` file to be placed in the repository's parent directory (./). Your `.env` file should contain environmental variables needs for your docker containers, in this case your `DD_API_KEY` and `DD_AGENT_HOST`
 
-If you don't already have a `.env` file, you can create one by running the command below in this repositorie's parent directory (./):
+If you don't already have a `.env` file, you can create one by running the command below in this repository's parent directory (./):
 
 `touch .env`
 
