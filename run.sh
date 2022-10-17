@@ -1,4 +1,4 @@
 #!/bin/bash
-docker network create my-net
+cat ./StatsD_client.py | grep statsd
 docker-compose build --no-cache
-docker-compose up
+docker-compose up -d

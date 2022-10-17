@@ -3,9 +3,12 @@ import time
 import random
 #if __name__ == "__main__":
 options = {
-    'statsd_host':'192.168.1.153',
+    'statsd_host':'host.docker.internal',
     'statsd_port':8125
 }
+"""options = {
+  'statsd_host' : $DD_DOGSTATSD_SOCKET
+}"""
 
 initialize(**options)
 
