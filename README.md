@@ -1,7 +1,9 @@
 # StatsD_client_docker
 
-## Usage
+Build as a sandbox test environment to test StatsD client instansiation as well as Datadog Docker agent configuration.
 
-To run 
+To run this script, simply enter the below command in your terminal and press enter
 
 ```./run.sh```
+
+![alt text](https://a.cl.ly/8Lu16lq6)
