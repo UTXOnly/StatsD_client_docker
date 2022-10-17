@@ -5,9 +5,7 @@ services:
     build: ./ 
     container_name: StatsD_client
     restart: unless-stopped
-    networks:
-      - test-docker-net
-
+    
   datadog:
     container_name: datadog-agent
     image: datadog/agent:latest
@@ -26,9 +24,3 @@ services:
       - /sys/fs/cgroup:/host/sys/fs/cgroup:ro
     ports:
       - "8125:8125/udp"
-    networks:
-      - test-docker-net # Created with docker network create my-net and deleted with docker network rm my-net
-
-networks:
-  test-docker-net:
-    external: true
