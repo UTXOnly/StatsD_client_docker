@@ -3,10 +3,12 @@ services:
   statsd_client:
     build: ./ 
     container_name: StatsD_client
+    environment:
+      - DD_TAGS=env:statsd-test
     
   datadog:
-    container_name: datadog-agent
-    image: datadog/agent:latest
+    container_name: datadog-agent-stats-d
+    image: datadog/agent:6.40.0
     environment:
       ## GLOBALS
       - DD_API_KEY=${DD_API_KEY}
