@@ -16,7 +16,7 @@ You can then add the necessary environment variables as depicted below:
 
  ```
  DD_API_KEY= <YOUR_API_KEY_HERE>
- ``` \
+ ``` 
  ```
  DD_AGENT_HOST=host.docker.internal
  ```
