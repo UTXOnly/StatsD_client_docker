@@ -7,17 +7,17 @@ This script requires a `.env` file to be placed in the repository's parent direc
 
 If you don't already have a `.env` file, you can create one by running the command below in this repository's parent directory (./):
 
-`nano .env`
+```nano .env```
 
 You can then add the necessary environment variables as depicted below:
 
 
- `DD_API_KEY= <YOUR_API_KEY_HERE>` \
- `DD_AGENT_HOST=host.docker.internal`
+ ```DD_API_KEY= <YOUR_API_KEY_HERE>``` \
+ ```DD_AGENT_HOST=host.docker.internal```
 
 To run this script, simply run the follwing script from this repository's parent directory.
 
-`./run.sh`
+```./run.sh```
 
 The run script simply builds fresh Docker images each instance, leveraging the `docker-compose` command
 
